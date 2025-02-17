@@ -19,9 +19,9 @@ const SingleProductPage = () => {
       )}
       {/* TEXT CONTAINER */}
       <div className="h-1/2 flex flex-col gap-4 md:h-[70%] md:justify-center md:gap-6 xl:gap-8">
-        <h1 className="text-3xl font-bold uppercase xl:text-5xl">{singleProduct.title}</h1>
-        <p>{singleProduct.desc}</p>
-        <Price price={singleProduct.price} id={singleProduct.id} options={singleProduct.options}/>
+        <h1 className="text-3xl font-bold uppercase xl:text-5xl text-purple-900">{singleProduct.title}</h1>
+        <p className="text-purple-900">{singleProduct.desc}</p> {/* Dark purple description text */}
+        <Price price={singleProduct.price} id={singleProduct.id} options={singleProduct.options} />
       </div>
     </div>
   );
